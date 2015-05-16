@@ -122,7 +122,8 @@ void directory_scanner()
 			{
 				if ( s0 == v_[i][0] && p0.filename().string() == v_[i][2])
 				{   
-					if (hash_counter(p0.string()) != boost::lexical_cast<unsigned long>(v_[i][3])) std::cout << "File : " << p0.filename().string() << " was changed" << endl;
+					if (hash_counter(p0.string()) != boost::lexical_cast<unsigned long>(v_[i][3])) 
+					std::cout << "File : " << p0.filename().string() << " was changed" << endl;
 					k = 1;
 					v_.erase(v_.begin()+i,v_.begin()+(i+1));
 				}
